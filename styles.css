@@ -71,18 +71,6 @@ nav ul li a {
   gap: 10px;
 }
 
-/* .header-buttons .login {
-  text-decoration: none;
-  color: #333;
-  font-weight: bold;
-  margin-right: 10px;
-} */
-
-/* .header-buttons .github img {
-  width: 24px;
-  height: 24px;
-} */
-
 .hero {
   position: relative;
   text-align: center;
@@ -91,7 +79,6 @@ nav ul li a {
   background: #f4f4f4;
   width: 100%;
   border-radius: 0px 0px 200px 200px;
-  /* clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20% 100%); */
 }
 
 .hero h1 {
@@ -141,16 +128,18 @@ nav ul li a {
 /* vedio */
 .video {
   position: absolute;
+  z-index: 10;
   top: 100%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 80%;
-  height: 60%;
-  max-width: 1000px;
-  max-height: 500px;
+  height: 70%;
+  max-width: 1500px;
   border-radius: 10px;
   overflow: hidden;
 }
+
+
 
 .video iframe {
   width: 100%;
@@ -177,10 +166,79 @@ nav ul li a {
 }
 
 .features {
+  position: relative;
   text-align: center;
-  padding: 50px 0;
-  background: #f5f7fa;
-  width: 100%;
+  padding-top: 50px;
+
+}
+
+.feature-bg-img {
+  position: absolute;
+  background-image: url("/assets/ADXaXa.png");
+  opacity: 90%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80%;
+  width: 80%;
+}
+
+.feature-card {
+  background-color: #f5f7fa;
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+
+.feature-card-image {
+  background: #ccc;
+  height: 200px;
+  width: 800px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-size: 1em;
+}
+
+@media (max-width: 600px) {
+  .feature-card {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .feature-card-image {
+    height: 150px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+  .feature-card {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .feature-card-image {
+    height: 180px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 900px) {
+  .feature-card {
+    flex-direction: row;
+    padding: 20px;
+  }
+
+  .feature-card-image {
+    height: 200px;
+    width: 800px;
+  }
 }
 
 .featuresItems {
@@ -308,10 +366,9 @@ nav ul li a {
   cursor: pointer;
 }
 
-.fooer-bg {
+.fooer-bg-img {
   position: absolute;
-  /* padding-top: -50px; */
-  background-image: url("/assets/sourcerer-icon.png");
+  background-image: url("/assets/trasparent-logo.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -319,10 +376,13 @@ nav ul li a {
   width: 100%;
 }
 
-.footer p {
+.footer {
   position: relative;
-  padding-top: 50px;
-  padding-bottom: 100px;
+  padding-top: 800px;
+  object-fit: cover;
+}
+
+.footer p {
   text-align: center;
   color: #666;
 }
