@@ -174,7 +174,7 @@ nav ul li a {
 
 .feature-bg-img {
   position: absolute;
-  background-image: url("/assets/ADXaXa.png");
+  background-image: url("./assets/ADXaXa.png");
   opacity: 90%;
   background-size: cover;
   background-position: center;
@@ -368,7 +368,7 @@ nav ul li a {
 
 .fooer-bg-img {
   position: absolute;
-  background-image: url("/assets/trasparent-logo.png");
+  background-image: url("./assets/trasparent-logo.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
